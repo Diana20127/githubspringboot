@@ -1,0 +1,9 @@
+DROP TABLE if EXISTS product;
+
+CREATE TABLE product (
+    id   INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(60) NOT NULL,
+    brand VARCHAR(45) NOT NULL, 
+    madein VARCHAR(45) NOT NULL, 
+    price FLOAT NOT NULL
+);

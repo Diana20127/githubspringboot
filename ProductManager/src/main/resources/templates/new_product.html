@@ -18,26 +18,27 @@
 	            <table border="0" cellpadding="10">
 	                <tr>
 	                    <td>Nombre del producto:</td>
-	                    <td><input class="form-control" type="text" th:field="*{name}" /></td>
+	                    <td><input id="name" class="form-control" type="text" th:field="*{name}" /></td>
 	                </tr>
 	                <tr>
 	                    <td>Marca:</td>
-	                    <td><input class="form-control" type="text" th:field="*{brand}" /></td>
+	                    <td><input id="brand" class="form-control" type="text" th:field="*{brand}" /></td>
 	                </tr>
 	                <tr>
 	                    <td>Hecho en:</td>
-	                    <td><input class="form-control" type="text" th:field="*{madein}" /></td>
+	                    <td><input id="madein" class="form-control" type="text" th:field="*{madein}" /></td>
 	                </tr>
 	                <tr>
 	                    <td>Precio:</td>
-	                    <td><input class="form-control" type="text" th:field="*{price}" /></td>
+	                    <td><input id="price" class="form-control" type="text" th:field="*{price}" /></td>
 	                </tr>                            
 	                <tr>
-	                    <td colspan="2"><button type="submit" class="btn-primary">Guardar</button> </td>
+	                    <td colspan="2"><button id="saveBtn" type="submit" class="btn-primary">Guardar</button> </td>
 	                </tr>
 	            </table>
 	        </form>
         </div>
     </div>
+    <script src="" th:src="@{/js/validate.js}"> </script>
 </body>
 </html>
